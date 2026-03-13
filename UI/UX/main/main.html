@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade App - Main</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-title">Trade App</header>
+
+    <nav class="up-dashboard" aria-label="Main navigation">
+        <div class="dashboard-item">
+            <h2><a href="/main" data-nav="home" aria-current="page">Home</a></h2>
+        </div>
+        <div class="dashboard-item">
+            <h2><a href="#" data-nav="portfolio">Portfolio</a></h2>
+        </div>
+        <div class="dashboard-item">
+            <h2><a href="#" data-nav="inventory">Inventory</a></h2>
+        </div>
+        <div class="dashboard-item">
+            <h2><a href="#" data-nav="market">Market</a></h2>
+        </div>
+        <div class="dashboard-item">
+            <h2><a href="#" data-nav="settings">Settings</a></h2>
+        </div>
+    </nav>
+    <main class="content-area" aria-live="polite"></main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Example:
+        // window.APP_CONFIG = {
+        //   featuredSkinUrl: "/your-featured-endpoint",
+        //   topMoversUrl: "/your-top-movers-endpoint"
+        // };
+        window.APP_CONFIG = window.APP_CONFIG || {};
+    </script>
+    <script src="main.js" defer></script>
+</body>
+</html>
