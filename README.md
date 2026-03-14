@@ -1,31 +1,61 @@
-# Skin Trading Bot Prototype
+# trade_app
 
-A prototype bot that acts as a financial helper for your skins.
+small project i'm making to try building a trading style app
 
-## Status
-Work in progress - backend is done, frontend is partially AI-generated.
+it's mostly an experiment and i'm still learning stuff while working on it
 
-## What it does
-- Crunches market numbers
-- Sends signals when prices are super low
-- Tells you when it's a good time to sell
+## what this is
 
-## Tech Stack
-- Backend: custom account system (prototype)
-- Frontend: 50% AI-generated, 50% handwritten (I'm still learning JS)
+basically a web app where you can look at trades and test some trading related things
 
-## Limitations
-- Not a final product yet due to gaps on the dev side
-- Frontend is not fully functional
+honestly i started it mostly to understand how trading apps work behind the scenes
 
-## Notes
-- Backend written entirely by me
-- Frontend partially generated with AI
+## what it has right now
 
-## Backend
-- Env vars: `DATABASE_URL`, `ACCESS_TOKEN_SECRET`, `COOKIE_SECURE`, `TOKEN`
-- `/get/` endpoint is a proxy to Steam and requires external network access
-- Auth is prototype-level: passwords are stored as plain text in the database
+- basic interface
+- working with some data
+- a few pages
+- simple trade logic
 
-## Tests
-- `test/terminal_test.go` uses a local mock server, so it does not require Steam access
+a lot of things are still unfinished
+
+## plans
+
+things i want to add later:
+
+- proper charts
+- more info about trades
+- maybe authentication
+- improve the UI because right now it's kinda messy 😅
+
+## running the project
+
+clone the repo
+
+```
+git clone https://github.com/w1nrex/trade_app
+```
+
+go into the folder
+
+```
+cd trade_app
+```
+
+install dependencies
+
+```
+npm install
+```
+
+run it
+
+```
+npm run dev
+```
+
+## why i made this
+
+mostly just to practice and try building something similar to a trading app
+
+if you find bugs or have ideas feel free to open an issue
